@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+State.create(id: 1, description: 'Santa Catarina', acronym: 'SC')
+State.create(id: 2, description: 'Sergipe', acronym: 'SE')
+State.create(id: 3, description: 'Sao Paulo', acronym: 'SP')
+
+State.find_or_create_by!(id:27, description: 'Tocantins', acronym: 'TO')
